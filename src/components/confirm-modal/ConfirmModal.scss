@@ -1,0 +1,45 @@
+.confirm-modal {
+  width: 290px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  .exc-icon {
+    color: rgb(255, 195, 85);
+    font-size: 54px;
+  }
+
+
+  .confirm-text {
+    font-size: 25px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
+
+    button {
+      width: 100px;
+      height: 30px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:nth-child(2) {
+        background-color: rgb(254, 107, 107);
+        color: white;
+      }
+
+      &:hover {
+        background-color: rgb(255, 195, 85);
+      }
+    }
+  }
+}

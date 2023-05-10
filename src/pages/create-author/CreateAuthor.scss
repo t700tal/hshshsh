@@ -1,0 +1,99 @@
+.create-author {
+  min-height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    min-width: 350px;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        font-size: 25px;
+      }
+
+      .provide-data {
+        font-weight: 300;
+        color: #797979;
+      }
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      border: 1px solid #CCC;
+      background: #FFF;
+      margin: 0 0 5px;
+      outline: none;
+      padding: 10px;
+    }
+
+    input {
+      &[type="file"] {
+        display: none;
+      }
+    }
+
+    label {
+      border: 1px dashed #CCC;
+      width: 140px;
+      height: 140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+
+      .image-icon {
+        color: #CCC;
+        font-size: 35px;
+        transition: transform .2s ease;
+      }
+
+      &:hover {
+        .image-icon {
+          transform: scale(1.2);
+        }
+      }
+
+      span {
+        text-align: center;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      background-color: orange;
+      transition: background-color .2s ease;
+      color: white;
+      font-size: 16px;
+      padding: 8px 14px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      margin-top: 30px;
+
+      &:hover {
+        background-color: #ff8c00
+      }
+    }
+
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}

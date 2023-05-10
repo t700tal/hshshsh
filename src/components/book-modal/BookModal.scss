@@ -1,0 +1,51 @@
+.book-modal {
+  width: 290px;
+  padding: 10px 0;
+  min-height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
+
+  .type {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .title,
+  .author {
+    text-align: center;
+    width: 85%;
+    word-wrap: break-word;
+  }
+
+  .description {
+    height: 250px;
+    overflow-y: scroll;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+
+    &:hover {
+      background-color: #ff8c00;
+    }
+  }
+
+}

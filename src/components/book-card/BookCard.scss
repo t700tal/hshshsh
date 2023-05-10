@@ -1,0 +1,146 @@
+.book-card {
+  width: 250px;
+  height: 530px;
+  background-color: #F9F9F9;
+  padding: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  img {
+    height: 290px;
+    width: 100%;
+  }
+
+  .book-info {
+    height: 160px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+
+    .book-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 3px;
+
+      .book-title {
+        font-size: 18px;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .book-author {
+        font-size: 14px;
+        font-weight: 300;
+        color: #797979;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .book-desc {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      color: #797979;
+      cursor: pointer;
+      min-height: 48px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .book-activity {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      input {
+        &[type="checkbox"] {
+          cursor: pointer;
+          width: 14px;
+          margin: 5px;
+          height: 14px;
+        }
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .book-reputation {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .book-rating {
+        .star-icon {
+          cursor: pointer;
+          transition: color .2s ease;
+
+          &:hover {
+            color: orange;
+          }
+        }
+      }
+
+      .comment-icon {
+        cursor: pointer;
+        transition: color .2s ease;
+
+        &:hover {
+          color: orange;
+        }
+      }
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+
+      .grade {
+        text-align: center;
+        height: 25px;
+        width: 25px;
+      }
+    }
+
+    .book-categories {
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .book-price {
+      color: orange;
+      font-size: 20px;
+    }
+
+
+    .book-title,
+    .book-author,
+    .book-categories {
+      min-height: 25px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+  }
+}

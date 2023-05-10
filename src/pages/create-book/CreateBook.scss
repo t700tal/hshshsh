@@ -1,0 +1,145 @@
+.create-book {
+  min-height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    min-width: 350px;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        font-size: 25px;
+      }
+
+      .provide-data {
+        font-weight: 300;
+        color: #797979;
+      }
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      border: 1px solid #CCC;
+      background: #FFF;
+      margin: 0 0 5px;
+      outline: none;
+      padding: 10px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 17px;
+      width: 100%;
+      align-items: center;
+
+      input {
+        &[type="number"] {
+          width: 90px;
+          text-align: center;
+        }
+      }
+
+      input {
+        &[type="checkbox"] {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+    }
+
+    .categories-title {
+      width: 70px;
+    }
+
+    .multi-select {
+      width: calc(100% - 70px);
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+
+    .warning {
+      font-size: 20px;
+      color: red;
+    }
+
+    button {
+      cursor: pointer;
+      background-color: orange;
+      transition: background-color .2s ease;
+      color: white;
+      font-size: 16px;
+      padding: 8px 14px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      margin-top: 30px;
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      &:hover {
+        background-color: #ff8c00
+      }
+    }
+
+    img {
+      width: 70px;
+      height: 69.5px;
+    }
+
+    input {
+      &[type="file"] {
+        display: none;
+      }
+    }
+
+    .image-label {
+      border: 1px dashed #CCC;
+      width: 140px;
+      height: 140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+
+      .image-icon {
+        color: #CCC;
+        font-size: 35px;
+        transition: transform .2s ease;
+      }
+
+      &:hover {
+        .image-icon {
+          transform: scale(1.2);
+        }
+      }
+
+      span {
+        text-align: center;
+      }
+    }
+  }
+}

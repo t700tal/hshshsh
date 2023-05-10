@@ -1,0 +1,26 @@
+.books-filter-bar {
+  position: absolute;
+  top: 10px;
+  height: 30px;
+  left: calc(50% - 150px);
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .search {
+    outline: none;
+    border: none;
+    padding: 2px 6px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 2px;
+    font-size: 15px;
+  }
+}
